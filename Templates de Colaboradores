@@ -1,0 +1,16 @@
+<!-- templates/colaboradores/index.html -->
+{% extends 'base.html' %}
+{% block title %}Colaboradores{% endblock %}
+{% block content %}
+<h1>Lista de Colaboradores</h1>
+<a href="{% url 'colaboradores_form' %}">Adicionar Colaborador</a>
+<ul>
+    {% for colaborador in colaboradores %}
+        <li>
+            <a href="{% url 'colaboradores_detalhe' colaborador.id %}">
+                {{ colaborador.nome }}
+            </a>
+        </li>
+    {% endfor %}
+</ul>
+{% endblock %}
