@@ -1,0 +1,24 @@
+controle_linhas/
+├── controle_linhas/
+│   ├── settings.py
+│   ├── urls.py
+│   ├── wsgi.py
+│   └── ...
+├── app/
+│   ├── templates/
+│   │   ├── base.html
+│   │   ├── colaboradores/
+│   │   │   ├── index.html
+│   │   │   ├── detalhe.html
+│   │   │   └── form.html
+│   │   ├── aparelhos/
+│   │   │   ├── index.html
+│   │   │   ├── detalhe.html
+│   │   │   └── form.html
+│   │   ├── linhas/
+│   │   │   ├── index.html
+│   │   │   ├── detalhe.html
+│   │   │   └── form.html
+│   └── ...
+├── manage.py
+└── ...
