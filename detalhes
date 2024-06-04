@@ -1,0 +1,12 @@
+<!-- templates/colaboradores/detalhe.html -->
+{% extends 'base.html' %}
+{% block title %}Detalhes do Colaborador{% endblock %}
+{% block content %}
+<h1>{{ colaborador.nome }}</h1>
+<p>CPF: {{ colaborador.cpf }}</p>
+<p>Cargo: {{ colaborador.cargo }}</p>
+<p>Departamento: {{ colaborador.departamento }}</p>
+<p>Email: {{ colaborador.email }}</p>
+<p>Telefone: {{ colaborador.telefone }}</p>
+<a href="{% url 'colaboradores_form' colaborador.id %}">Editar</a>
+{% endblock %}
