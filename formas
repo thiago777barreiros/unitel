@@ -1,0 +1,11 @@
+<!-- templates/colaboradores/form.html -->
+{% extends 'base.html' %}
+{% block title %}Formulário de Colaborador{% endblock %}
+{% block content %}
+<h1>{% if colaborador %}Editar{% else %}Adicionar{% endif %} Colaborador</h1>
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Salvar</button>
+</form>
+{% endblock %}
